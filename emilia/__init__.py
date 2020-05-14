@@ -27,22 +27,22 @@ except:
 ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
-	TOKEN = os.environ.get('TOKEN', None)
+	TOKEN = os.environ.get('1109457970:AAHVtEiUcYJ2Oq1_1ggF5bFJoYdf8YaHxh0', None)
 	try:
-		OWNER_ID = int(os.environ.get('OWNER_ID', None))
+		OWNER_ID = int(os.environ.get('1091505526', None))
 	except ValueError:
 		raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-	MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
-	OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+	MESSAGE_DUMP = os.environ.get('-1001401743809', None)
+	OWNER_USERNAME = os.environ.get("Born2fight", None)
 
 	try:
-		SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
+		SUDO_USERS = set(int(x) for x in os.environ.get("1028432629", "829363192").split())
 	except ValueError:
 		raise Exception("Your sudo users list does not contain valid integers.")
 
 	try:
-		SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+		SUPPORT_USERS = set(int(x) for x in os.environ.get("1028432629", "829363192").split())
 	except ValueError:
 		raise Exception("Your support users list does not contain valid integers.")
 
@@ -52,7 +52,7 @@ if ENV:
 		raise Exception("Your spammers users list does not contain valid integers.")
 
 	try:
-		WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
+		WHITELIST_USERS = set(int(x) for x in os.environ.get("1028432629", "829363192").split())
 	except ValueError:
 		raise Exception("Your whitelisted users list does not contain valid integers.")
 
