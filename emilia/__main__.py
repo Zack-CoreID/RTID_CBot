@@ -28,15 +28,15 @@ PM_START_TEXT = """
 Hi {}, my name is {}! If you have any questions on how to use me, read /help.
 
 You can always find the list of available commands with /help.
-[Add me](https://t.me/sanaTWICEbot?startgroup=new) to your group and i'll manage it.
+[Add me](https://t.me/Republik_TelegramIDBot?startgroup=new) to your group and i'll manage it.
 
 If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
-And last [STAN TWICE!!!](https://youtu.be/3ymwOvzhwHs)馃槝
-@sana_album
+And last [RT-ID Community](http://t.me/Republik_TelegramID)
+@RTIDBotDev
 """
 
 HELP_STRINGS = """
-Hey there! My name is **SANA**.
+Hey there! My name is **Seller CORONA | RTID™**.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 """
@@ -46,7 +46,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for my creator to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/keselekpermen69)."""
+There are two ways of paying him; [Telegram DM](t.me/Zack_Opp47)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -155,10 +155,10 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="馃帀 Add me to your group", url="https://t.me/sanaTWICEbot?startgroup=new")],
+                [[InlineKeyboardButton(text="馃帀 Add me to your group", url="https://t.me/Republik_TelegramIDBot?startgroup=new")],
                 [InlineKeyboardButton(text="馃挱 Language", callback_data="main_setlang"), InlineKeyboardButton(text="鈿欙笍 Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="馃懃 Support Group", url="https://t.me/userbotindo"), InlineKeyboardButton(text="馃敂 Update Channel", url="https://t.me/sana_album")],
-                [InlineKeyboardButton(text="鉂� Help", url="https://t.me/sanaTWICEbot?start=help"), InlineKeyboardButton(text="馃挅 Donate", url="http://paypal.me/keselekpermen69")]])
+                [InlineKeyboardButton(text="馃懃 Support Group", url="https://t.me/Republik_TelegramID"), InlineKeyboardButton(text="馃敂 Update Group", url="https://t.me/RTIDBotDev")],
+                [InlineKeyboardButton(text="鉂� Help", url="https://t.me/Republik_TelegramIDBot?start=help"), InlineKeyboardButton(text="馃挅 Donate", url="http://t.me/Zack_Opp47")]])
             update.effective_message.reply_text(
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN,
