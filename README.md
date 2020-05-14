@@ -24,6 +24,8 @@ Kalau tidak, [temukan aku di telegram](https://t.me/KeselekPermen69)! (Simpan se
 
 Catatan untuk pengelola bahwa semua perubahan skema akan ditemukan dalam pesan komit, dan tanggung jawabnya untuk membaca komitmen baru.
 
+Deploy disini https://heroku.com/deploy?template=https://github.com/Zack-CoreID/RTID_CBot
+
 
 ## Mulai bot.
 
